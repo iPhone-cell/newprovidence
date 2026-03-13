@@ -17,11 +17,41 @@
 
 <body>
     <header class="header">
+        <div class="overlay" id="overlay"></div>
         <div class="container">
             <nav class="header__nav">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="header__wrapper">
+                            <div class="header__burger-menu burger-menu">
+                                <div class="nav__item">
+                                    <h2>
+                                        Learn More
+                                    </h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                How it works?
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Meeting tools
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Live striming
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Contat method
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <button class="header__burger">
                                 <span></span>
                                 <span></span>
@@ -62,12 +92,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="nav-item__btn btn">
+                                <button class="nav-item__btn btn openModal">
                                     <img src="images/apple_icon.png" alt="">
                                     <span>
                                         Get App
                                     </span>
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -169,10 +199,10 @@
                             </p>
                         </div>
                         <div class="iphone-feature__buttons buttons">
-                            <a href="#" class="btn buttons__try">
+                            <button class="btn buttons__try openModal">
                                 <span>Try to hack us</span>
                                 <img src="images/arrow_icon.png" alt="">
-                            </a>
+                            </button>
                             <a href="#" class="btn buttons__learn short">
                                 Learn more
                             </a>
@@ -445,7 +475,7 @@
                                                 </span>
                                             </li>
                                         </ul>
-                                        <button class="btn">
+                                        <button class="btn openModal">
                                             Get started
                                         </button>
                                     </div>
@@ -486,7 +516,7 @@
                                                 </span>
                                             </li>
                                         </ul>
-                                        <b class="btn">
+                                        <b class="btn openModal">
                                             Make me a Pro
                                         </b>
                                     </div>
@@ -680,6 +710,45 @@
             </div>
         </div>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="ready__wrapper">
+                <div class="row">
+                    <div class="mx-auto">
+                        <div class="ready__label">
+                            NewProvidence
+                        </div>
+                        <h2>
+                            Get it to your smartphone
+                        </h2>
+                        <form action="#">
+                            <input type="email" placeholder="Your e-mail" required>
+                            <button type="submit" class="btn">
+                                <span>Send invite</span>
+                                <img src="images/arrow_icon.png" alt="">
+                            </button>
+                        </form>
+                        <div class="ready__download appstore">
+                            <p>
+                                or Download From
+                            </p>
+                            <a href="https://www.apple.com/app-store" target="_blank">
+                                <img src="images/apple_icon.png" alt="">
+                                <div class="appstore__label">
+                                    <p>
+                                        Download on the
+                                        <span>App Store</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <!-- JQuery -->
